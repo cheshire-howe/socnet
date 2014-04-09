@@ -1,0 +1,4 @@
+add salt to password
+
+add check to make sure password and confirm password are the same
+Find a way to notify user of errors during register submission
