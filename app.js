@@ -21,7 +21,7 @@ app.configure(function() {
   app.use(express.cookieParser());
   app.use(express.session(
     {secret: "very secret stuff", store: new MemoryStore()}));
-  mongoose.connect('mongodb://' + config.db.user + ':' + config.db.pass + '@ds029277.mongolab.com:29277/socnet')
+  mongoose.connect('mongodb://' + config.db.user + ':' + config.db.pass + '@' + db.database);
 });
 
 app.get('/', function(req, res) {
